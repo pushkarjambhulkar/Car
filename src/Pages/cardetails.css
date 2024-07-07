@@ -1,0 +1,234 @@
+/* CarDetails specific styles */
+.car-details-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.car-card, .owner-card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 900px; /* Adjust the width as needed */
+  width: 100%;
+}
+
+.car-image-container, .owner-image-container {
+  flex: 1;
+  text-align: center;
+  padding: 30px; /* Increase padding around the image */
+}
+
+.car-image, .owner-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.car-details-content, .owner-details-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.car-details-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 28px; /* Adjusted font size in pixels */
+  color: #333;
+}
+
+.car-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.car-detail-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* Adjusted font size in pixels */
+  color: #555;
+}
+
+.car-detail-item svg {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.car-includes h4 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.car-includes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.car-include-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.car-include-item svg {
+  margin-right: 8px;
+  color: green;
+}
+
+.car-rating {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+.car-rating svg {
+  margin-right: 8px;
+  color: gold;
+}
+
+.owner-card {
+  flex-direction: row-reverse; /* Ensure the image is on the right and details are on the left */
+  position: relative; /* Ensure positioning for the button */
+}
+
+.owner-details {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.owner-details-content {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure the button is at the bottom */
+}
+
+.owner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.owner-detail-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* Adjusted font size in pixels */
+  color: #555;
+}
+
+.owner-detail-item svg {
+  margin-right: 20px;
+  color: #007bff;
+}
+
+.book-now-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+}
+
+.book-now-button {
+  background-color: #ff0000; /* Red background */
+  color: white;
+  padding: 30px 30px; /* Smaller and rectangular */
+  border: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.car-detail-item.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px; /* Adjust size as needed */
+  color: green; /* Desired color */
+  margin-top: 10px; /* Adjust spacing from above elements */
+}
+
+.car-detail-item.price svg {
+  margin-right: 5px; /* Adjust spacing between ₹ symbol and price */
+}
+
+.book-now-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+@media (max-width: 768px) {
+  .car-card, .owner-card {
+    flex-direction: column;
+  }
+
+  .car-details {
+    grid-template-columns: 1fr;
+  }
+
+  .car-details-header {
+    font-size: 24px; /* Adjusted font size in pixels */
+  }
+
+  .car-detail-item {
+    font-size: 16px; /* Adjusted font size in pixels */
+  }
+
+  .car-include-item {
+    font-size: 14px;
+  }
+
+  .car-rating {
+    font-size: 16px;
+  }
+
+  .owner-detail-item {
+    font-size: 16px; /* Adjusted font size in pixels */
+  }
+
+  .book-now-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .car-image-container, .owner-image-container {
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .car-detail-item.price {
+    font-size: 28px; /* Adjusted font size for price on smaller screens */
+  }
+}
+/* CarDetails specific styles */
+.car-details-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.go-back {
+  position: absolute;
+  top: 20px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+  z-index: 1000; /* Ensure it's above other content */
+  cursor: pointer;
+  font-size: 24px; /* Adjust icon size */
+  color: #333; /* Adjust icon color */
+}
+
+.go-back:hover {
+  color: #007bff; /* Hover color */
+}
